@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //upto React 17X version
+        const Login= function(){
+            return (<div>
+                    <h3>User Login Page</h3>
+                    <dl>
+                        <dt>Enter your Email</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Enter your password</dt>
+                        <dd><input type="password"/></dd>
+                    </dl>
+                    <button>Submit</button>
+                </div>);
+        }
+        ReactDOM.render(<Login/>,document.getElementById("root"));
+        /*
+       ReactDOM.render((<div>
+                    <h3>User Login Page</h3>
+                    <dl>
+                        <dt>Enter your Email</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Enter your password</dt>
+                        <dd><input type="password"/></dd>
+                    </dl>
+                    <button>Submit</button>
+                </div>),document.getElementById("root"));
+        
+        //from React 18x version
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        root.render("Hello Nur");
+        
+        function Login(){
+            return (<div>
+                    <h3>User Login Page</h3>
+                    <dl>
+                        <dt>Enter your Email</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Enter your password</dt>
+                        <dd><input type="password"/></dd>
+                    </dl>
+                    <button>Submit</button>
+                </div>);
+        }
+        
+       const Login2= function(){
+            return (<div>
+                    <h3>User Login Page</h3>
+                    <dl>
+                        <dt>Enter your Email</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Enter your password</dt>
+                        <dd><input type="password"/></dd>
+                    </dl>
+                    <button>Submit</button>
+                </div>);
+        }
+        root.render(<section><Login2/><Login2/></section>);
+        */
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple HTML template.</p>
+    <noscript>Your browser does not support JavaScript! or Enable JavaScript to view this content. to your browser settings.</noscript>
+</body>
+</html>

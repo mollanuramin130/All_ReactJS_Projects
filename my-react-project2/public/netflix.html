@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <!-- Linking Bootstrap Library-->
+     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+     <!--Linking React Library-->
+     <script src="../node_modules/react/umd/react.development.js"></script>
+     <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+     <script src="../node_modules/@babel/standalone/babel.js"></script>
+
+     <!--Creating Virtual DOM-->
+     <script type="text/babel">
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+
+        const NetflixIndex=function (){
+            return (
+                <div className="shade">
+                    <NetflixHeader/>
+                </div>
+                );
+        }
+
+        const NetflixHeader=function(){
+            return (
+                <header className="d-flex justify-content-between pt-3">
+                    <div className="text-danger fw-bold h1 ps-3">
+                        NETFLIX
+                    </div>
+                    <div>
+                        <div className="input-group">
+                            <span className="bi bi-translate"></span>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                </header>
+            );
+        }
+
+        const NetflixSection=function (){
+            return (
+                <div></div>
+            );
+        }
+
+        const NetflixMain=function(){
+            return (
+                <div>
+                    
+                </div>
+            );
+        }
+
+        root.render(<NetflixIndex/>);
+     </script>
+
+     <style>
+        body{
+            background-size: cover;
+        }
+        .shade{
+            height: 100vh;
+            background-color: rgba(0,0,0,0.7);
+        }
+     </style>
+</head>
+<body background="./images/netflix-banner.jpg">
+    <noscript>Please Enable Javascript in your Browser</noscript>
+    <div id="root"></div>
+</body>
+</html>
